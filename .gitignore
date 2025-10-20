@@ -1,0 +1,10 @@
+# Ignore these folders (and their contents)
+config/
+
+# Ignore these files
+config.json
+
+# Ignore files with these extensions
+*.tmp
+*.log
+*.db

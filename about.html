@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About — Izaiah (Astro)</title>
+    <meta name="description" content="Long-form about page for Izaiah — founder of Astro's Lounge, dragon & dino lover, full-stack developer and host." />
+    <style>
+        :root{
+            --bg:#0b0f14;
+            --card:#0f1720;
+            --muted:#9aa6b2;
+            --accent-blue:#2b8af6;
+            --accent-red:#e24b4b;
+            --text:#e6eef6;
+            --maxw:900px;
+        }
+        html,body{height:100%;}
+        body{
+            margin:0;
+            font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+            background:url('https://images.playground.com/60097783-00cf-4ae4-b4ea-1d7ed31ea159.jpeg') no-repeat center center fixed;
+            background-size:cover;
+            color:var(--text);
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            line-height:1.6;
+            padding:48px 20px;
+            display:flex;
+            justify-content:center;
+        }
+        .container{
+            width:100%;
+            max-width:var(--maxw);
+        }
+        header{
+            display:flex;
+            align-items:center;
+            gap:18px;
+            margin-bottom:28px;
+                background: linear-gradient(26deg, rgb(29 0 0 / 79%), rgb(5 0 24 / 77%));
+    border-radius: 10px;
+            padding:14px 18px;
+            border-radius:12px;
+            border:1px solid rgba(255,255,255,0.06);
+            box-shadow:0 18px 40px rgba(2,6,23,0.8);
+            backdrop-filter: blur(8px) saturate(120%);
+        }
+        .avatar{
+            background-image: url(https://cdn.astroslounge.com/img/proxy?src=https://cdn.discordapp.com/avatars/608074323164397614/a380040d3f9f0855fba99210c5d2b462.webp?size=1024);
+            background-size: cover;
+            width:96px;height:96px;border-radius:16px;
+            display:flex;align-items:center;justify-content:center;
+            font-weight:700;color:#08121a;font-size:36px;
+            box-shadow:0 12px 36px rgba(0,0,0,.75), inset 0 1px 0 rgba(255,255,255,0.03);
+            flex:0 0 96px;
+            border:3px solid rgba(255,255,255,0.08);
+            background-color:rgba(0,0,0,0.12);
+            outline: 1px solid rgba(0,0,0,0.35);
+        }
+    h1{margin:0;font-size:26px;letter-spacing:-0.02em;text-shadow:0 1px 0 rgba(0,0,0,0.6);color:rgba(255,255,255,0.98);}
+    .subtitle{margin:6px 0 0;color:rgba(255,255,255,0.82);font-size:13px;}
+        main{
+            /* stronger, semi-opaque surface to separate content from the background */
+            background: linear-gradient(26deg, rgb(29 0 0 / 79%), rgb(5 0 24 / 77%));
+            border-radius:12px;
+            padding:28px;
+            box-shadow:0 16px 50px rgba(2,6,23,0.8);
+            border:1px solid rgba(255,255,255,0.06);
+            backdrop-filter: blur(8px);
+        }
+        section+section{margin-top:20px;}
+    h2{font-size:18px;margin:0 0 8px;color:rgba(255,255,255,0.95);}
+    p{margin:0 0 12px;color:rgba(230,238,246,0.88);}
+    .muted{color:rgba(230,238,246,0.78);font-size:13px;}
+        ul{margin:8px 0 12px 18px;}
+    a{color:var(--accent-blue);text-decoration:none;}
+    .links a{display:inline-block;margin-right:12px;margin-bottom:8px;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.03);font-size:14px;}
+        .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+        .card{
+            background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+            border:1px solid rgba(255,255,255,0.03);
+            padding:14px;border-radius:10px;
+        }
+        footer{margin-top:20px;text-align:center;font-size:13px;color:var(--muted);}
+        @media (max-width:720px){
+            .two-col{grid-template-columns:1fr;}
+            header{gap:12px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar" ></div>
+            <div>
+                <h1>Izaiah</h1>
+                <div class="subtitle">Founder of Astro's Lounge · Full stack developer · Host of servers, sites & bots</div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2>Hello — this is me, Izaiah</h2>
+                <p>
+                    I'm Izaiah. I build things, run communities, and spend a lot of time around dragons and dinosaurs,
+                    both in fiction and in games. This page is a snapshot of what I care about: games that
+                    feel alive, music that drives my playlists, the tools and sites I've built, and the community I
+                    try to keep humming along. If you find something you like, ping me in the Discord.
+                </p>
+                <p class="muted">Quick facts: founder of Astro's Lounge, creator of Discord bots and websites, operator of dedicated hosting servers for rent (game servers, bots, and web hosting).</p>
+            </section>
+
+            <section>
+                <h2>I love dragons and dinos — favorite games and why</h2>
+                <p>
+                    I'm drawn to immersive worlds where creatures feel real, where ecosystems and combat have weight.
+                    Games let me be both explorer and storyteller — whether I'm hunting, nesting, or just surviving with a pack.
+                </p>
+
+                <div class="card">
+                    <ul>
+                        <li><a href="https://store.steampowered.com/app/376210/The_Isle/" target="_blank" rel="noopener">The Isle</a> — you'll find me on Evrima and Legacy. I love the tension and open-world survival; the dinosaur behavior and player-driven moments are unbeatable.</li>
+                        <li><a href="https://store.steampowered.com/app/1088090/Day_of_Dragons/" target="_blank" rel="noopener">Day of Dragons</a> — focused on dragon life, flight and the grind to mature into something lethal and beautiful.</li>
+                        <li><a href="https://store.steampowered.com/app/1295900/Draconia/" target="_blank" rel="noopener">Draconia</a> — another dragon-centric world with an emphasis on growth and aerial combat.</li>
+                        <li><a href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank" rel="noopener">Phasmophobia</a> — cooperative horror with friends; great for tense streams and hilarious failures.</li>
+                        <li><a href="https://store.steampowered.com/app/719890/Beasts_of_Bermuda/" target="_blank" rel="noopener">Beast of Bermuda</a> — sandbox dinosaur-style gameplay and emergent player stories.</li>
+                        <li><a href="https://pathoftitans.com" target="_blank" rel="noopener">Path of Titans</a> — deep dinos, customization, and slow-burn progression.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Music — songs and artists that I keep on repeat</h2>
+                <p>
+                    Music is a huge part of how I build atmosphere — both for streaming and for coding late into the night.
+                    Below are tracks and artists that consistently show up on my playlists.
+                </p>
+
+                <div class="two-col">
+                    <div class="card">
+                        <h3 style="margin-top:0;font-size:15px;">Favorite songs</h3>
+                        <ul>
+                            <li><a href="https://open.spotify.com/track/6rkXvVvoOS49pLx2ztTSyp?si=ac1da9fe757c49ac" target="_blank" rel="noopener">Falling Together — Ekoh</a></li>
+                            <li><a href="https://open.spotify.com/track/5dAtKXyrQoQW054LZqJ5dP?si=9abd7e1abc84409f" target="_blank" rel="noopener">Feel Something — ILLENIUM</a></li>
+                            <li><a href="https://open.spotify.com/track/1yryMsXAGBK79VOrGe1qEe?si=8c0cf8b0ba8d4785" target="_blank" rel="noopener">Chaos — I Prevail</a></li>
+                            <li><a href="https://open.spotify.com/track/0ofLz0b9mmXXvDgQp7XPRd?si=9fe5245541e54fef" target="_blank" rel="noopener">Lifelines — I Prevail</a></li>
+                            <li><a href="https://open.spotify.com/track/1g7j5AxiNKTGjryhFIlAsA?si=e1d7f18d41bd42fd" target="_blank" rel="noopener">Story Of My Life — ILLENIUM</a></li>
+                            <li><a href="https://open.spotify.com/track/4j41Du0uMXJrfEY7Xe9CDO?si=9a1a3e53eef04d53" target="_blank" rel="noopener">Carnivore — STARSET</a></li>
+                            <li><a href="https://open.spotify.com/track/06DoVYuj94EypdqFiPYMqV?si=080595cab5194ba6" target="_blank" rel="noopener">Hourglass — Set It Off</a></li>
+                            <li><a href="https://open.spotify.com/track/7i9q0VPbENCoYnJUsJhX9d?si=364ec0af8fde485d" target="_blank" rel="noopener">Duality — Set It Off</a></li>
+                            <li><a href="https://open.spotify.com/track/79w5oc04QaB15czB3qO95w?si=617056aae21f4fce" target="_blank" rel="noopener">Stranger — Stellar</a></li>
+                            <li><a href="https://open.spotify.com/track/4cExQhQ0i34yZcoDsHFMV6?si=379b5fcb8cda44fc" target="_blank" rel="noopener">DIE FOR YOU — STARSET</a></li>
+                            <li><a href="https://open.spotify.com/track/0x2TYePnFyfZ9ajY2WMkby?si=6cbeb86e27524b21" target="_blank" rel="noopener">Killer In The Mirror — Set It Off</a></li>
+                            <li><a href="https://open.spotify.com/track/3Te8uLyit6X3ncNW8Fp3K2?si=cde5ca4e624347e9" target="_blank" rel="noopener">Immortals — Fall Out Boy</a></li>
+                            <li><a href="https://open.spotify.com/track/47pmY6tTSpUV8gfj7Aqoe8?si=2207adaed7044db7" target="_blank" rel="noopener">ECHO — STARSET</a></li>
+                            <li><a href="https://open.spotify.com/track/5KcMCNwSVg88I7YzymrP6C?si=00b2d292bb1a4746" target="_blank" rel="noopener">Elements — MMXVII</a></li>
+                            <li><a href="https://open.spotify.com/track/23Vf9hNoBN8AacpUUHbiRy?si=623a9ab84133470d" target="_blank" rel="noopener">War — Sum 41</a></li>
+                            <li><a href="https://open.spotify.com/track/1lnongQG3fZXFBXmWHm1dU?si=e263cde649e04a66" target="_blank" rel="noopener">GOOD THINGS — Ekoh & Lø Spirit</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3 style="margin-top:0;font-size:15px;">Favorite bands & artists</h3>
+                        <ul>
+                            <li><a href="https://open.spotify.com/artist/0kD8IT1CzF7js2XKM9lLLa?si=9ilNeUH7QVaW836U_htVXA" target="_blank" rel="noopener">Starset</a></li>
+                            <li><a href="https://open.spotify.com/artist/3Uobr6LgQpBbk6k4QGAb3V?si=lclmm2wgTWe28mqgWP9ZLg" target="_blank" rel="noopener">I Prevail</a></li>
+                            <li><a href="https://open.spotify.com/artist/06bDwgCHeMAwhgI8il4Y5k?si=5mrCzLBWSA2VnQD_RIjxsg" target="_blank" rel="noopener">Set It Off</a></li>
+                            <li><a href="https://open.spotify.com/artist/5lC7N2Mm9i92KSfW4opawO?si=_5fDVxt-Qk-eINUIvLeaxQ" target="_blank" rel="noopener">Ekoh</a></li>
+                            <li><a href="https://open.spotify.com/artist/0qT79UgT5tY4yudH9VfsdT?si=6McCKGK_T1G25_yv0uHk8w" target="_blank" rel="noopener">Sum 41</a></li>
+                            <li><a href="https://open.spotify.com/artist/45eNHdiiabvmbp4erw26rg?si=--E-_f6uThamiBvZOyLcEA" target="_blank" rel="noopener">ILLENIUM</a></li>
+                            <li><a href="https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz?si=q30TqKfXQOKjrwCsbDINoQ" target="_blank" rel="noopener">Linkin Park</a></li>
+                            <li><a href="https://open.spotify.com/artist/1y2lHVqbvYD5qr0M5ajEL4?si=-ftr1hWLSpS6lik4sNTzgg" target="_blank" rel="noopener">Reece Brunke</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Projects, sites & hosting</h2>
+                <p>
+                    I build full-stack apps, Discord bots, and websites — and I run dedicated hardware so other people can host
+                    game servers, websites, and bots reliably. Two public examples of sites I've built:
+                </p>
+
+                <div class="card">
+                    <ul>
+                        <li><a href="https://jurassicjungle.gg" target="_blank" rel="noopener">jurassicjungle.gg</a> — a community hub with guides, server info, and player resources.</li>
+                        <li><a href="https://astroslounge.com" target="_blank" rel="noopener">astroslounge.com</a> — the home of the gaming community I founded; event calendars, server statuses, and support.</li>
+                    </ul>
+                    <p class="muted">If you need hosting for game servers, bots, or websites, I manage and rent out dedicated servers with custom setups and monitoring.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Work & skills</h2>
+                <p>I do full-stack software, database, and web development. My day-to-day includes backend services, REST/APIs, database design, front-end interfaces, and deploying and maintaining production services for communities and game servers.</p>
+                <ul>
+                    <li>Languages & frameworks: Node.js, Python, modern JS, SQL/NoSQL, common web stacks</li>
+                    <li>Ops: server management, containerization, game server hosting, monitoring</li>
+                    <li>Community tools: Discord bots (moderation, economy, utilities), custom site integrations</li>
+                </ul>
+            </section>
+
+            <footer>
+                <div class="muted">Thanks for reading. If you want to connect, join the Discord or use the links above to find me on Twitch, YouTube, or Spotify.</div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
